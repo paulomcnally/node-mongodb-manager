@@ -1,6 +1,6 @@
 {
     "name": "mongodb-manager",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "CLI to import and export MongoDB databases",
     "author": "Paulo McNally ",
     "keywords": ["cli", "mongodb", "manager", "backup", "import", "export"],
