@@ -11,7 +11,7 @@ Exporta las colecciones del servidor configurado en export y las importa al serv
 
     {
         "export":{
-            "host": "192.168.1.2:27018",
+            "host": "192.168.1.2:27017",
             "user": "",
             "password": ""
         },
@@ -20,13 +20,10 @@ Exporta las colecciones del servidor configurado en export y las importa al serv
             "user": "",
             "password": ""
         },
-        "database": "nodenica",
+        "database": "mydatabase",
         "collections": [
-            "blogs",
-            "questions",
-            "settings",
-            "trainings",
-            "users"
+            "users",
+            "blog"
         ]
     }
 
