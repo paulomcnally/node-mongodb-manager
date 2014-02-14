@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+
+var command = ( process.argv[2] ) ? process.argv[2] : null;
+var param = ( process.argv[3] ) ? process.argv[3] : null;
+var commands = ["url","path"];
+
+var cli = require('../lib/cli');
+
+/**
+ * Error
+ * command is null
+ */
+if( !command ){
+    cli.error('Es necesario que especifique un comando.');
+    process.exit(0);
+}
+
+/**
+ * Error
+ * command don't exist in applications
+ */
+if( ( commands.indexOf(command) != -1 ) === false ){
+    cli.error('El comando que ha especificado no existe.');
+    process.exit(1);
+}
+
+
+if( !param ){
+    cli.error('Es necesario que especifique un parámetro.');
+    process.exit(2);
+}
+
+
+
+cli[command](param);
